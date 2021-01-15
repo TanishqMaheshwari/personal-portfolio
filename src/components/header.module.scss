@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap");
+
+html {
+  font-family: "Rubik", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.title {
+  color: #0e6ba8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-list {
+  display: flex;
+  padding: 0 1em;
+}
+
+.nav-item {
+  color: black;
+  display: block;
+  padding: 0 1em;
+  font-weight: medium;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: #a6e1fa;
+}
+
+.active-nav-item {
+  color: #333333;
+}
+
+@media only screen and (min-width: 940px) {
+  .header {
+    padding: 2em 4em 2em 4em;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+  .nav-item {
+    color: black;
+    display: block;
+    font-weight: medium;
+    font-size: 1.5em;
+    padding: 0 1em;
+    text-decoration: none;
+  }
+}
+
+/* .header {
+    padding: 1rem 0 3rem;
+}
+
+.title {
+    color: #000000;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-item {
+    color: #999999;
+    font-size: 0.9rem;
+    margin-right: 1.3rem;
+    text-decoration: none;
+} */
