@@ -24,6 +24,22 @@ html {
   margin-top: 1em;
 }
 
+.circle {
+  animation: circleAnim 1.75s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+  from {
+    transform: translate(0);
+    z-index: 5;
+  }
+
+  to {
+    transform: translate(0, 50px);
+    z-index: 5;
+  }
+}
+
 .intro {
   font-weight: medium;
 }

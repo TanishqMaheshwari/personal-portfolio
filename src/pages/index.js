@@ -27,17 +27,48 @@ const IndexPage = () => {
       <section className={indexStyles.hero}>
         <div className={indexStyles.heroContent}>
           <h1 className={indexStyles.hey}>Hey, I'm Tanishq!</h1>
-          <p className={indexStyles.intro}>
+          {/* <p className={indexStyles.intro}>
             I aim to create great products using design thinking processes,
             software development, and business frameworks.
+          </p> */}
+          <p className={indexStyles.intro}>
+            I aim to create great purpose-driven products using design thinking
+            processes and software development.
           </p>
           {/* Scroll image imported as SVG */}
 
           <p className={indexStyles.scrollText}>
             Scroll down to learn more about me :)
           </p>
-
           <svg
+            className={indexStyles.scroll}
+            width="50"
+            height="94"
+            viewBox="0 0 50 94"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="2.5"
+              y="2.5"
+              width="45"
+              height="89"
+              rx="22.5"
+              stroke="black"
+              stroke-width="5"
+            />
+
+            <circle
+              className={indexStyles.circle}
+              transform="translate(0)"
+              cx="25"
+              cy="23"
+              r="12"
+              fill="black"
+            />
+          </svg>
+
+          {/* <svg
             className={indexStyles.scroll}
             width="48"
             height="78"
@@ -56,11 +87,12 @@ const IndexPage = () => {
               stroke-width="6"
             />
             <path
+              className={indexStyles.circle}
               d="M37.5909 25.4483C37.5909 32.5632 31.3402 38.3966 23.5455 38.3966C15.7507 38.3966 9.5 32.5632 9.5 25.4483C9.5 18.3333 15.7507 12.5 23.5455 12.5C31.3402 12.5 37.5909 18.3333 37.5909 25.4483Z"
               fill="#070707"
               stroke="black"
             />
-          </svg>
+          </svg> */}
         </div>
 
         <div className={indexStyles.heroImage}>
@@ -161,7 +193,9 @@ const IndexPage = () => {
               ></img>
             </div>
             <div className={indexStyles.experienceInfo}>
-              <h2 className={indexStyles.companyDescription}>Managing and Updating Non-Profit's Website</h2>
+              <h2 className={indexStyles.companyDescription}>
+                Managing and Updating Non-Profit's Website
+              </h2>
               <p className={indexStyles.companyTitle}>@ World in Focus</p>
               <ul className={indexStyles.experienceTags}>
                 <li className={indexStyles.tags}>Wordpress</li>
