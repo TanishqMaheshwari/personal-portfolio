@@ -51,6 +51,7 @@ a {
 
 .experience {
   position: relative;
+  text-align: center;
   background: #a6e1fa;
 }
 
@@ -60,6 +61,13 @@ a {
   box-sizing: border-box;
 }
 
+.experience-title {
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 1em;
+  margin-bottom: 2em auto;
+}
+
 .card {
   cursor: pointer;
   background: white;
@@ -67,6 +75,7 @@ a {
   border-radius: 1em;
   margin: 1em;
   width: 80%;
+  min-width: 205px;
   max-width: 650px;
   display: flex;
   flex-direction: column;
@@ -81,16 +90,6 @@ a {
 
 .card-image {
   width: 50%;
-}
-
-.experience {
-  font-size: 2em;
-  font-weight: bold;
-  margin: auto;
-}
-
-.experience-info {
-  width: 100;
 }
 
 .company-description {
@@ -117,6 +116,7 @@ a {
   color: #ffffff;
   background-color: #1b3fab;
   margin-bottom: 0.5em;
+  text-align: center;
 }
 
 @media only screen and (min-width: 670px) {
@@ -128,14 +128,6 @@ a {
 @media only screen and (min-width: 740px) {
   .card {
     flex-direction: row;
-  }
-
-  .ursa-image {
-    margin-left: -2em;
-  }
-
-  .wif-image {
-    margin-left: -1em;
   }
 
   .company-image {
@@ -168,21 +160,29 @@ a {
     font-weight: bold;
     margin-bottom: 3em;
   }
+
+  .hey {
+    font-size: 2em;
+  }
+
+  .intro {
+    font-size: 1.65em;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-  .scroll {
-    display: none;
-  }
-
   .card {
-    max-width: 250px;
+    max-width: 205px;
+  }
+  
+  .intro {
+    font-size: 1.3em;
   }
 }
 
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 1020px) {
   .hero {
-    height: 90vh;
+    height: 90%;
     display: grid;
     text-align: center;
     grid-template-columns: 55% auto;

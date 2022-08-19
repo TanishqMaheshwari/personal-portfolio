@@ -94,7 +94,7 @@ const IndexPage = () => {
               <ul className={indexStyles.experienceTags}>
                 <li className={indexStyles.tags}>React with Typescript</li>
                 <li className={indexStyles.tags}>
-                  Defining Product Requirements
+                  Defining Product Needs
                 </li>
                 <li className={indexStyles.tags}>Engineering Scoping</li>
               </ul>
