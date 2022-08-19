@@ -74,8 +74,7 @@ const IndexPage = () => {
           </svg>
         </div>
       </section>
-      {/* this right side might belong to a different class */}
-      {/* right-side image imported as SVG */}
+
       <section className={indexStyles.experience}>
         <div className={indexStyles.experienceTitleContainer}>
           <h1 className={indexStyles.experienceTitle}>Work Experience</h1>
@@ -84,7 +83,7 @@ const IndexPage = () => {
           <div className={indexStyles.card}>
             <div className={indexStyles.companyImage}>
               <img
-                //src={require("")}
+                className={indexStyles.cardImage}
                 src={require("../images/faire.png")}
                 alt="Faire Logo"
               ></img>
@@ -94,8 +93,10 @@ const IndexPage = () => {
               <p className={indexStyles.companyTitle}>@ Faire</p>
               <ul className={indexStyles.experienceTags}>
                 <li className={indexStyles.tags}>React with Typescript</li>
-                <li className={indexStyles.tags}>Product Design and Scoping</li>
-                <li className={indexStyles.tags}>Technical Requirements</li>
+                <li className={indexStyles.tags}>
+                  Defining Product Requirements
+                </li>
+                <li className={indexStyles.tags}>Engineering Scoping</li>
               </ul>
             </div>
           </div>
@@ -103,23 +104,44 @@ const IndexPage = () => {
           <div className={indexStyles.card}>
             <div className={indexStyles.companyImage}>
               <img
-                //src={require("")}
-                src={require("../images/faire.png")}
-                alt="Ursa Landing Page"
+                className={indexStyles.cardImage}
+                src={require("../images/mappedin.png")}
+                alt="Mappedin Logo"
               ></img>
             </div>
             <div className={indexStyles.experienceInfo}>
-              <h2>Developing Tools to Improve Engineering Throughput</h2>
-              <p className={indexStyles.companyTitle}>@ Faire</p>
+              <h2>Creating Beautiful Web Experiences</h2>
+              <p className={indexStyles.companyTitle}>@ Mappedin</p>
               <ul className={indexStyles.experienceTags}>
                 <li className={indexStyles.tags}>React with Typescript</li>
-                <li className={indexStyles.tags}>Product Design and Scoping</li>
-                <li className={indexStyles.tags}>Technical Requirements</li>
+                <li className={indexStyles.tags}>Forming Design Systems</li>
+                <li className={indexStyles.tags}>
+                  Managing Cross-Functional Teams
+                </li>
               </ul>
             </div>
           </div>
 
-
+          <div className={indexStyles.card}>
+            <div className={indexStyles.companyImage}>
+              <img
+                className={indexStyles.cardImage}
+                src={require("../images/frv.png")}
+                alt="Front Row Ventures Logo"
+              ></img>
+            </div>
+            <div className={indexStyles.experienceInfo}>
+              <h2>
+                Improving Accessibility to Student Funding and Entrepreneurship
+              </h2>
+              <p className={indexStyles.companyTitle}>@ Front Row Ventures</p>
+              <ul className={indexStyles.experienceTags}>
+                <li className={indexStyles.tags}>Product Management</li>
+                <li className={indexStyles.tags}>Stakeholder Management</li>
+                <li className={indexStyles.tags}>Automating Processes</li>
+              </ul>
+            </div>
+          </div>
         </div>
         {/* <div className={indexStyles.experienceCards}>
           <div className={indexStyles.card}>
