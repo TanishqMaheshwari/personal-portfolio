@@ -96,6 +96,9 @@ const IndexPage = () => {
                 <li className={indexStyles.tags}>
                   Defining Product Needs
                 </li>
+                <li className={indexStyles.tags}>
+                  A/B Testing
+                </li>
                 <li className={indexStyles.tags}>Engineering Scoping</li>
               </ul>
             </div>
