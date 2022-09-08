@@ -9,56 +9,44 @@ const IndexPage = () => {
   return (
     <Layout>
       <Head title="Home" />
-      {/*
-      <h1>Hey!</h1>
-      <h2>
-        I'm Tanishq, a computer science and business student at the University
-        of Waterloo.
-      </h2>
-      <h3>
-        I'm interested in developing impactful products and services to benefit
-        people around the world. To accomplish this, I aim to apply my
-        experiences with design thinking processes, software development, and
-        business frameworks.
-      </h3>
-      //include resume here */}
       {/* everything here is on the left side of the intro page, so maybe it will need to have its own class 
       compared to the upcoming image */}
       <section className={indexStyles.hero}>
         <div className={indexStyles.heroContent}>
           <h1 className={indexStyles.hey}>Hey, I'm Tanishq!</h1>
           <p className={indexStyles.intro}>
-            I aim to create great products using design thinking processes,
-            software development, and business frameworks.
+            I aim to create great purpose-driven products using design thinking
+            processes and software development.
           </p>
-          {/* Scroll image imported as SVG */}
-
           <p className={indexStyles.scrollText}>
             Scroll down to learn more about me :)
           </p>
-
+          {/* Scroll image imported as SVG */}
           <svg
             className={indexStyles.scroll}
-            width="48"
-            height="78"
-            viewBox="0 0 48 78"
+            width="50"
+            height="94"
+            viewBox="0 0 50 94"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <rect
-              x="3"
-              y="3"
-              width="42"
-              height="72"
-              rx="21"
-              fill="white"
+              x="2.5"
+              y="2.5"
+              width="45"
+              height="89"
+              rx="22.5"
               stroke="black"
-              stroke-width="6"
+              stroke-width="5"
             />
-            <path
-              d="M37.5909 25.4483C37.5909 32.5632 31.3402 38.3966 23.5455 38.3966C15.7507 38.3966 9.5 32.5632 9.5 25.4483C9.5 18.3333 15.7507 12.5 23.5455 12.5C31.3402 12.5 37.5909 18.3333 37.5909 25.4483Z"
-              fill="#070707"
-              stroke="black"
+
+            <circle
+              className={indexStyles.circle}
+              transform="translate(0)"
+              cx="25"
+              cy="23"
+              r="12"
+              fill="black"
             />
           </svg>
         </div>
@@ -86,15 +74,80 @@ const IndexPage = () => {
           </svg>
         </div>
       </section>
-      {/* this right side might belong to a different class */}
-      {/* right-side image imported as SVG */}
+
       <section className={indexStyles.experience}>
         <div className={indexStyles.experienceTitleContainer}>
           <h1 className={indexStyles.experienceTitle}>Work Experience</h1>
         </div>
         <div className={indexStyles.experienceCards}>
           <div className={indexStyles.card}>
-            {/*add a link here */}
+            <div className={indexStyles.companyImage}>
+              <img
+                className={indexStyles.cardImage}
+                src={require("../images/faire.png")}
+                alt="Faire Logo"
+              ></img>
+            </div>
+            <div className={indexStyles.experienceInfo}>
+              <h2>Developing Tools to Improve Engineering Throughput</h2>
+              <p className={indexStyles.companyTitle}>@ Faire</p>
+              <ul className={indexStyles.experienceTags}>
+                <li className={indexStyles.tags}>React with Typescript</li>
+                <li className={indexStyles.tags}>
+                  Defining Product Needs
+                </li>
+                <li className={indexStyles.tags}>
+                  A/B Testing
+                </li>
+                <li className={indexStyles.tags}>Engineering Scoping</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className={indexStyles.card}>
+            <div className={indexStyles.companyImage}>
+              <img
+                className={indexStyles.cardImage}
+                src={require("../images/mappedin.png")}
+                alt="Mappedin Logo"
+              ></img>
+            </div>
+            <div className={indexStyles.experienceInfo}>
+              <h2>Creating Beautiful Web Experiences</h2>
+              <p className={indexStyles.companyTitle}>@ Mappedin</p>
+              <ul className={indexStyles.experienceTags}>
+                <li className={indexStyles.tags}>React with Typescript</li>
+                <li className={indexStyles.tags}>Forming Design Systems</li>
+                <li className={indexStyles.tags}>
+                  Managing Cross-Functional Teams
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className={indexStyles.card}>
+            <div className={indexStyles.companyImage}>
+              <img
+                className={indexStyles.cardImage}
+                src={require("../images/frv.png")}
+                alt="Front Row Ventures Logo"
+              ></img>
+            </div>
+            <div className={indexStyles.experienceInfo}>
+              <h2>
+                Improving Accessibility to Student Funding and Entrepreneurship
+              </h2>
+              <p className={indexStyles.companyTitle}>@ Front Row Ventures</p>
+              <ul className={indexStyles.experienceTags}>
+                <li className={indexStyles.tags}>Product Management</li>
+                <li className={indexStyles.tags}>Stakeholder Management</li>
+                <li className={indexStyles.tags}>Automating Processes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        {/* <div className={indexStyles.experienceCards}>
+          <div className={indexStyles.card}>
             <div className={indexStyles.companyImage}>
               <img
                 className={indexStyles.ursaImage}
@@ -161,7 +214,9 @@ const IndexPage = () => {
               ></img>
             </div>
             <div className={indexStyles.experienceInfo}>
-              <h2 className={indexStyles.companyDescription}>Managing and Updating Non-Profit's Website</h2>
+              <h2 className={indexStyles.companyDescription}>
+                Managing and Updating Non-Profit's Website
+              </h2>
               <p className={indexStyles.companyTitle}>@ World in Focus</p>
               <ul className={indexStyles.experienceTags}>
                 <li className={indexStyles.tags}>Wordpress</li>
@@ -190,7 +245,7 @@ const IndexPage = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </Layout>
   )
