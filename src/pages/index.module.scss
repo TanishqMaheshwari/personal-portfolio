@@ -50,7 +50,7 @@ a {
 }
 
 .experience {
-  position: relative;
+  // position: relative;
   text-align: center;
   background: #a6e1fa;
 }
@@ -121,7 +121,7 @@ a {
 
 @media only screen and (min-width: 670px) {
   .experience-title-container {
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -140,18 +140,18 @@ a {
     margin-left: 1em;
   }
 
-  .experience::before {
-    content: "";
-    position: absolute;
-    width: 175px;
-    height: 175px;
-    border-radius: 50%;
-    opacity: 40%;
-    background: #0e6ba8;
-    top: 0;
-    left: 0;
-    z-index: 0;
-  }
+  // .experience::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 175px;
+  //   height: 175px;
+  //   border-radius: 50%;
+  //   opacity: 40%;
+  //   background: #0e6ba8;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 0;
+  // }
 
   .experience-title {
     font-size: 2em;
@@ -174,7 +174,7 @@ a {
   .card {
     max-width: 205px;
   }
-  
+
   .intro {
     font-size: 1.3em;
   }
@@ -223,4 +223,120 @@ a {
     padding-left: 1.7em;
     margin-bottom: 2.5em;
   }
+}
+
+// NEW PROJECTS SECTION
+.projects-title-container {
+  justify-content: center;
+}
+
+.projects {
+  font-size: 2em;
+}
+
+.a {
+  text-decoration: none;
+  color: black;
+}
+
+.projects-title {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.projects-grid {
+  //padding: 2.5%;
+}
+
+// mobile view
+@media screen and (max-width: 768px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-demo {
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    object-fit: cover;
+  }
+
+  .project-text {
+    width: 100%;
+    cursor: pointer;
+    pointer-events: auto;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .block-game {
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    object-fit: cover;
+    order: 1;
+  }
+
+  .tetris-text {
+    width: 100%;
+    cursor: pointer;
+    pointer-events: auto;
+    text-align: center;
+    font-size: 18px;
+    order: 2;
+  }
+}
+
+// tablet view
+@media screen and (max-width: 1024px) {
+}
+
+// desktop view
+.project {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+  padding: 2.5%;
+}
+
+.project-demo {
+  width: 50%;
+  justify-self: center;
+}
+
+.project-text {
+  width: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.block-game {
+  width: 50%;
+  justify-self: center;
+  object-fit: cover;
+}
+
+.tetris-text {
+  width: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.project-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.github-cta {
+  padding-top: 1em;
+  font-size: 20px;
 }
