@@ -1,4 +1,5 @@
 import React from "react"
+import ReactPlayer from "react-player"
 import { Link } from "gatsby"
 import indexStyles from "./index.module.scss"
 
@@ -74,7 +75,7 @@ const IndexPage = () => {
           </svg>
         </div>
       </section>
-
+      {/* EXPERIENCE SECTION */}
       <section className={indexStyles.experience}>
         <div className={indexStyles.experienceTitleContainer}>
           <h1 className={indexStyles.experienceTitle}>Work Experience</h1>
@@ -93,12 +94,8 @@ const IndexPage = () => {
               <p className={indexStyles.companyTitle}>@ Faire</p>
               <ul className={indexStyles.experienceTags}>
                 <li className={indexStyles.tags}>React with Typescript</li>
-                <li className={indexStyles.tags}>
-                  Defining Product Needs
-                </li>
-                <li className={indexStyles.tags}>
-                  A/B Testing
-                </li>
+                <li className={indexStyles.tags}>Defining Product Needs</li>
+                <li className={indexStyles.tags}>A/B Testing</li>
                 <li className={indexStyles.tags}>Engineering Scoping</li>
               </ul>
             </div>
@@ -246,6 +243,73 @@ const IndexPage = () => {
             </div>
           </div>
         </div> */}
+        {/* PROJECTS SECTION */}
+        <div className={indexStyles.projectsTitleContainer}>
+          <h1 className={indexStyles.projectsTitle}>Projects</h1>
+        </div>
+        <div className={indexStyles.projectsGrid}>
+          <div className={indexStyles.project}>
+            <div className={indexStyles.projectDemo}>
+              <ReactPlayer
+                playing={true}
+                loop={true}
+                muted={true}
+                width="100%"
+                url="https://player.vimeo.com/video/748980255"
+              />
+            </div>
+            <div className={indexStyles.projectText}>
+              <p className={indexStyles.projectTitle}>3D Graphics Engine</p>
+              <p className={indexStyles.projectDescription}>
+                Developed a program that renders object files into 3D graphics
+                featuring shading, illumination, and a first-person movable
+                camera using C++.
+              </p>
+            </div>
+          </div>
+          <div className={indexStyles.project}>
+            <div className={indexStyles.tetrisText}>
+              <p className={indexStyles.projectTitle}>Block Game</p>
+              <p className={indexStyles.projectDescription}>
+                Developed Tetris using React and Typescript, the program is
+                packaged as a node module so you can embed it into other
+                applications!
+              </p>
+            </div>
+            <div className={indexStyles.blockGame}>
+              <ReactPlayer
+                playing={true}
+                loop={true}
+                muted={true}
+                width="100%"
+                url="https://player.vimeo.com/video/749010143"
+              />
+            </div>
+          </div>
+          <div className={indexStyles.project}>
+            <img
+              className={indexStyles.projectDemo}
+              src={require("../images/vibing.png")}
+              alt="Project demo"
+            ></img>
+            <div className={indexStyles.projectText}>
+              <p className={indexStyles.projectTitle}>Vibing</p>
+              <p className={indexStyles.projectDescription}>
+                React application that allows users to create custom Spotify playlists
+                that can be saved to their account using the Spotify API.
+              </p>
+            </div>
+          </div>
+          <div className={indexStyles.githubCta}>
+            <p>
+              You can find the repositories to all these projects and more on my{" "}
+              <a href="https://github.com/TanishqMaheshwari" target="_blank">
+                GitHub
+              </a>
+              !
+            </p>
+          </div>
+        </div>
       </section>
     </Layout>
   )
